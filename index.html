@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aparecida nutricionista</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <main aria-label="conteúdo principal do site">
+    <div class="container">
+      <h1 class="text-center" id="titulo-principal">Aparecida nutrição</h1><br>
+      <p class="text-justified">Este é um site onde a Aparecida pode cadastrar seus pacientes.</p>
+      <div>
+        <form class="form">
+          <div class="form-group">
+            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome neste campo">
+            <label for="nome">nome</label>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome neste campo">
+            <label for="sobrenome">Sobrenome</label>
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control" id="peso">
+            <label for="peso">Peso</label>
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control" id="altura">
+            <label for="altura">Altura</label>
+          </div>
+          <button class="btn btn-primary" type="submit">Salvar</button>
+          <hr class="my-4">
+
+          <h2>Lista de pacientes</h2>
+
+          <table class="table table-bordered">
+            <thead>
+              <th>nome</th>
+              <th>sobrenome</th>
+              <th>peso</th>
+              <thaltura>
+                </th>
+                <th>imc</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+  </main>
+  <script type="module" src="js/main/programa.js"></script>
+<script>
+  let titulo = document.getElementById('titulo-principal');
+  titulo.textContent = 'Aparecida Nutricionista';
+</script>
+</body>
+
+</html>
