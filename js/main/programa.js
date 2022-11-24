@@ -1,6 +1,8 @@
-import { Paciente } from "../models/paciente.js";
+import { PacienteController } from "../controllers/paciente-controller.js";
 
-alert("O módulo foi importado com sucesso");
-
-let p1 = new Paciente("João", "silva", 80, 1.75);
-console.log(p1);
+let controller = new PacienteController();
+let formulario = document.querySelector('.form');
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+    controller.criarPaciente();
+});
