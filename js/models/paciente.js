@@ -5,10 +5,17 @@ export class Paciente {
     #altura;
 
     constructor(nome, sobrenome, peso, altura) {
-this.#nome = nome;
-this.#sobrenome = sobrenome;
-this.#peso = peso;
-this.#altura = altura;
+        this.#nome = nome;
+        this.#sobrenome = sobrenome;
+        this.#peso = peso;
+        this.#altura = altura;
+    }
+
+    equals(outroPaciente) {
+        if (!outroPaciente instanceof Paciente) {
+            return false;
+        }
+        return this.#nome === outroPaciente.#nome && this.#sobrenome === outroPaciente.#sobrenome;
     }
 
     get nome() {
@@ -30,5 +37,5 @@ this.#altura = altura;
     set peso(peso) {
         this.#peso = peso;
     }
-    
+
 }
