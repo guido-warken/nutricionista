@@ -1,8 +1,11 @@
-import { PacienteController } from "../controllers/paciente-controller.js";
+import { PacienteController } from '../controllers/pacienteController.js';
 
-let controller = new PacienteController();
-let formulario = document.querySelector('.form');
-formulario.addEventListener('submit', (e) => {
+const controller = new PacienteController();
+
+const handleSubmit = (e) => {
     e.preventDefault();
-    controller.criarPaciente();
-});
+    controller.criaPaciente();
+};
+
+let formulario = document.querySelector('.form');
+formulario.addEventListener('submit', handleSubmit);
